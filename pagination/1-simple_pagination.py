@@ -1,18 +1,22 @@
 #!/usr/bin/env python3
-""" Simple pagination
 """
+Simple pagination
+"""
+
 import csv
 import math
 from typing import List
 
+
 def index_range(page: int, page_size: int) -> tuple:
     """
-    Returns a tuple of (start_index, end_index)
-    for the given page and page_size
+    Return a tuple containing the start and end index
+    for a given page and page size.
     """
     start_index = (page - 1) * page_size
     end_index = start_index + page_size
     return (start_index, end_index)
+
 
 class Server:
     """Server class to paginate a database of popular baby names.
@@ -35,8 +39,11 @@ class Server:
 
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
         """
-        Returns a list of rows for the given page and page_size
+        Return the requested page from the dataset.
         """
+        assert type(page) is int and page > 0
+        assert type(page_size) is int and page_size > 0
+
         start_index, end_index = index_range(page, page_size)
-        dataset = self.dataset()
-        return dataset[start_index:end_index]
+
+        return self.dataset()[start_index:end_index]
