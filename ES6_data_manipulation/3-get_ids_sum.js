@@ -1,4 +1,4 @@
-// Use reduce ids sum
+// Use reduce ids sum 
 
 const getStudentIdsSum = (students) => {
   const all = students

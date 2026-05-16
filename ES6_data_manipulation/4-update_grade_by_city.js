@@ -1,4 +1,4 @@
-// Grade by city and add grade
+// Grade by city and add grade 
 
 const updateStudentGradeByCity = (students, city, newGrades) => {
   if (!Array.isArray(students) || !Array.isArray(newGrades)) {

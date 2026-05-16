@@ -1,4 +1,4 @@
-// Typed Array 8 Int
+// Typed Array 8 Int 
 
 const createInt8TypedArray = (length, position, value) => {
   const buffer = new ArrayBuffer(length);

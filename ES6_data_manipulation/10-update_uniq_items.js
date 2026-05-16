@@ -1,4 +1,4 @@
-// Update unique items
+// Update unique items 
 
 const updateUniqueItems = (map) => {
   if (!(map instanceof Map)) {

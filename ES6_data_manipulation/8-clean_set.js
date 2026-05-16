@@ -1,4 +1,4 @@
-// Clean set with strings coincidences
+// Clean set with strings coincidences 
 
 const cleanSet = (set, startString) => {
   const str = [];

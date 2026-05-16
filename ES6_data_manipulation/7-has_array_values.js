@@ -1,4 +1,4 @@
-// Has array values
+// Has array values 
 
 const hasValuesFromArray = (set, array) => {
   for (const item of array) {
